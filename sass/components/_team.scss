@@ -1,0 +1,70 @@
+.team {
+  display: flex;
+
+  &-title {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &-content {
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    text-align: center;
+    background: $white-color;
+    border-bottom: 4px;
+  }
+
+  &-style {
+    background-color: $third-bg-color;
+  }
+
+  &-member {
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .team-link {
+    display: flex;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+    justify-content: space-evenly;
+  }
+
+  .social-link {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    border-radius: 50%;
+    justify-content: center;
+    fill: #afb1b8;
+    transition: fill 250ms $time-function, background-color 250ms $time-function;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $white-color;
+    }
+  }
+
+  .team-link li:not(:first-child) {
+    margin-left: 10px;
+  }
+}
