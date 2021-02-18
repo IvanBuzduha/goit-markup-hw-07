@@ -24,9 +24,7 @@
 
   transition: fill 250ms $time-function, color 250ms $time-function;
 }
-.site-nav .link:not(:last-child) {
-  margin-right: 50px;
-}
+
 .auth-nav .link {
   color: $primary-text-color;
   margin-left: 10px;
@@ -38,6 +36,9 @@
   &:focus {
     color: $accent-color;
     fill: $accent-color;
+  }
+  &.link:not(:last-child) {
+    margin-right: 50px;
   }
 }
 

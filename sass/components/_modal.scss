@@ -106,15 +106,6 @@
   }
 }
 
-.form-label-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 12px;
-  color: $title-text-color;
-}
 .form-fild button {
   width: 200px;
   height: 50px;
@@ -163,19 +154,26 @@
   border-radius: 4px;
 }
 
-.form-label-agree a {
-  color: $accent-color;
-  margin-left: 10px;
-  text-decoration: underline;
-}
-
 .form-label {
   font-size: 12px;
   line-height: 1.16em;
-}
-
-.form-label-agree {
-  display: flex;
-  font-size: 14px;
-  align-items: center;
+  &-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 12px;
+    color: $title-text-color;
+  }
+  &-agree {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    a {
+      color: $accent-color;
+      margin-left: 10px;
+      text-decoration: underline;
+    }
+  }
 }
